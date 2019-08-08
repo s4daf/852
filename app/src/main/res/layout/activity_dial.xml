@@ -7,8 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".dial">
 
+
+
     <EditText
-        android:layout_margin="15dp"
+        android:layout_margin="17dp"
         android:maxLength="11"
         android:text="09"
         android:inputType="phone"
@@ -16,22 +18,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <RelativeLayout
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    <Button
-       android:background="00ff00"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="call
-" />
 
 
-    </RelativeLayout>
+
+        <ImageButton
+
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="#0000"
+            android:scaleType="centerCrop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/s65"/>
 
 
 
 
-    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

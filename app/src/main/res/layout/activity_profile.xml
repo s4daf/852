@@ -9,8 +9,6 @@ android:background="#e53935"
     tools:context=".profile">
 
 
-
-
     <EditText
         android:textColor="#fff"
         android:textColorHint="#fff"

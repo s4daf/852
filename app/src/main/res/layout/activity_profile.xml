@@ -10,6 +10,7 @@ android:background="#e53935"
 
 
     <EditText
+        android:id="@+id/EdtName"
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:hint="please enter your name"
@@ -18,6 +19,7 @@ android:background="#e53935"
         android:layout_height="wrap_content" />
 
     <EditText
+        android:id="@+id/EdtFamily"
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:hint="please enter your family"
@@ -27,6 +29,7 @@ android:background="#e53935"
 
 
     <EditText
+        android:id="@+id/EdtAge"
         android:maxLength="2"
         android:textColor="#fff"
         android:textColorHint="#fff"
@@ -39,6 +42,7 @@ android:background="#e53935"
 
 
     <EditText
+        android:id="@+id/EdtPhone"
         android:textColor="#fff"
         android:layout_marginTop="15dp"
         android:textColorHint="#fff"
@@ -51,6 +55,7 @@ android:background="#e53935"
 
 
     <EditText
+        android:id="@+id/EdtAdress"
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:hint="please enter your address"
@@ -60,6 +65,7 @@ android:background="#e53935"
 
 
     <Button
+        android:id="@+id/BtnReview"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:layout_width="150dp"

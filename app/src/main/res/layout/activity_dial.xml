@@ -10,6 +10,7 @@
 
 
     <EditText
+        android:id="@+id/EdtNumber"
         android:layout_margin="17dp"
         android:maxLength="11"
         android:text="09"
@@ -22,7 +23,7 @@
 
 
         <ImageButton
-
+            android:id="@+id/BtnCall"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="#0000"
@@ -30,11 +31,6 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/s65"/>
-
-
-
-
-
 
 
 

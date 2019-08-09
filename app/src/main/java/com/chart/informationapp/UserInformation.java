@@ -25,18 +25,19 @@ public class UserInformation extends AppCompatActivity {
         TextView TxtAddress = (TextView) findViewById(R.id.TxtTagAddress);
 
         Intent intent = getIntent();
-        String name  = intent.getStringExtra("message_id");
-        String family   = intent.getStringExtra("message_id");
-        String age = intent.getStringExtra("message_id");
-        String phone = intent.getStringExtra("message_id");
-        String address = intent.getStringExtra("message_id");
+        String name  = intent.getStringExtra("name");
+        String family   = intent.getStringExtra("family");
+        String age = intent.getStringExtra("age");
+        String phone = intent.getStringExtra("phone");
+        String address = intent.getStringExtra("address");
 
 
-         Txtname.setText(name);
-        Txtname.setText(family);
-        Txtname.setText(age);
-        Txtname.setText(phone);
-        Txtname.setText(address);
+        Txtname.setText(name);
+        Txtfamily.setText(family);
+        TxtAge.setText(age);
+        TxtPhone.setText(phone);
+        TxtAddress.setText(address);
+
 
         Button btnVerifyPhoneNumber = (Button) findViewById(R.id.btnEdit);
 

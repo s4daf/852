@@ -20,7 +20,7 @@ public class profile extends AppCompatActivity {
         btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(profile.this, UserInformation.class);
+                Intent i = new Intent(profile.this, profile.class);
                 startActivity(i);
             }
         });

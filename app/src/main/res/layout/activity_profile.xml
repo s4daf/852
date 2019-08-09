@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:background="#e53935"
+android:background="#64b5f6"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,19 +11,19 @@ android:background="#e53935"
 
     <EditText
         android:id="@+id/EdtName"
-        android:textColor="#fff"
-        android:textColorHint="#fff"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:hint="please enter your name"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="17dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/EdtFamily"
-        android:textColor="#fff"
-        android:textColorHint="#fff"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:hint="please enter your family"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="17dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -31,10 +31,10 @@ android:background="#e53935"
     <EditText
         android:id="@+id/EdtAge"
         android:maxLength="2"
-        android:textColor="#fff"
-        android:textColorHint="#fff"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:hint="please enter your age"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="17dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -43,9 +43,9 @@ android:background="#e53935"
 
     <EditText
         android:id="@+id/EdtPhone"
-        android:textColor="#fff"
-        android:layout_marginTop="15dp"
-        android:textColorHint="#fff"
+        android:textColor="#000"
+        android:layout_marginTop="17dp"
+        android:textColorHint="#000"
         android:maxLength="11"
         android:inputType="phone"
         android:hint="please enter your phone number"
@@ -56,8 +56,8 @@ android:background="#e53935"
 
     <EditText
         android:id="@+id/EdtAdress"
-        android:textColor="#fff"
-        android:textColorHint="#fff"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:hint="please enter your address"
         android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
@@ -72,5 +72,13 @@ android:background="#e53935"
         android:layout_height="wrap_content"
         android:text="review" />
 
+    <TextView
+        android:text="succesfulldat"
+        android:id="@+id/savedata"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:textColor="#000" />
 
 </LinearLayout>

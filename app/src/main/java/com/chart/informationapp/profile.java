@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class profile extends AppCompatActivity {
 
@@ -17,12 +18,28 @@ public class profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         Button btnVerifyPhoneNumber = (Button) findViewById(R.id.BtnReview);
 
+        final EditText EdtName = (EditText) findViewById(R.id.EdtName);
+        final EditText EdtFamily = (EditText) findViewById(R.id.EdtFamily);
+        final EditText EdtAge = (EditText) findViewById(R.id.EdtAge);
+        final EditText EdtPHONE = (EditText) findViewById(R.id.EdtPhone);
+        final EditText EdtAddress = (EditText) findViewById(R.id.EdtAdress);
+
         btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(profile.this, profile.class);
-                startActivity(i);
+               String name = EdtName.getText().toString();
+                String family = EdtFamily.getText().toString();
+                String age= EdtAge.getText().toString();
+                String phone= EdtPHONE.getText().toString();
+                String adress = EdtAddress.getText().toString();
+
+                Intent intent = new Intent(profile.this, UserInformation.class);
+                startActivityForResult(intent, 150);
+
+
             }
         });
     }
+
+
 }

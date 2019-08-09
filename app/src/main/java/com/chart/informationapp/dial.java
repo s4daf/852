@@ -21,6 +21,7 @@ public class dial extends AppCompatActivity {
     private ImageButton imageButton_dialer;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

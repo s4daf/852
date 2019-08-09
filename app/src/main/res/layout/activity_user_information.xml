@@ -24,7 +24,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/TxtFisrname"
+            android:id="@+id/TxtFisrtname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

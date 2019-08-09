@@ -31,9 +31,15 @@ public class profile extends AppCompatActivity {
                 String family = EdtFamily.getText().toString();
                 String age= EdtAge.getText().toString();
                 String phone= EdtPHONE.getText().toString();
-                String adress = EdtAddress.getText().toString();
+                String address = EdtAddress.getText().toString();
 
                 Intent intent = new Intent(profile.this, UserInformation.class);
+                intent.putExtra("name",name);
+                intent.putExtra("family",family);
+                intent.putExtra("age",age);
+                intent.putExtra("phone",phone);
+                intent.putExtra("address",address);
+
                 startActivityForResult(intent, 150);
 
 

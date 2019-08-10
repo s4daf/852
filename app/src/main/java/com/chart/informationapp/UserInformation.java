@@ -22,8 +22,6 @@ public class UserInformation extends AppCompatActivity {
         setContentView(R.layout.activity_user_information);
 
 
-
-
         TextView Txtname = (TextView) findViewById(R.id.TxtFisrtname);
         TextView Txtfamily = (TextView) findViewById(R.id.TxtSeondName);
         TextView TxtAge = (TextView) findViewById(R.id.TxtTagAge);
@@ -31,11 +29,11 @@ public class UserInformation extends AppCompatActivity {
         TextView TxtAddress = (TextView) findViewById(R.id.TxtTagAddress);
 
         Intent intent = getIntent();
-        String name  = intent.getStringExtra("name");
-        String family   = intent.getStringExtra("family");
-        String age = intent.getStringExtra("age");
-        String phone = intent.getStringExtra("phone");
-        String address = intent.getStringExtra("address");
+        final String name = intent.getStringExtra("name");
+        final String family = intent.getStringExtra("family");
+        final String age = intent.getStringExtra("age");
+        final String phone = intent.getStringExtra("phone");
+        final String address = intent.getStringExtra("address");
 
 
         Txtname.setText(name);
@@ -45,7 +43,7 @@ public class UserInformation extends AppCompatActivity {
         TxtAddress.setText(address);
 
 
-        Button btnVerifyPhoneNumber = (Button) findViewById(R.id.btnEdit);
+        Button btnVerifyPhoneNumber =  findViewById(R.id.btnEdit);
 
         btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,22 +51,54 @@ public class UserInformation extends AppCompatActivity {
                 Intent i = new Intent(UserInformation.this, profile.class);
                 startActivity(i);
                 finish();
+
+                PreferenceManager
+                        .getDefaultSharedPreferences(UserInformation.this)
+                        .edit()
+                        .putString("name", name)
+                        .apply();
+                PreferenceManager
+                        .getDefaultSharedPreferences(UserInformation.this)
+                        .edit()
+                        .putString("family", family)
+                        .apply();
+                PreferenceManager
+                        .getDefaultSharedPreferences(UserInformation.this)
+                        .edit()
+                        .putString("phone", phone)
+                        .apply();
+                PreferenceManager
+                        .getDefaultSharedPreferences(UserInformation.this)
+                        .edit()
+                        .putString("_Age", age)
+                        .apply();
+                PreferenceManager
+                        .getDefaultSharedPreferences(UserInformation.this)
+                        .edit()
+                        .putString("address", address)
+                        .apply();
+
+
             }
         });
 
-        final Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
+
+        final Button btnConfirm = findViewById(R.id.btnConfirm);
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
+                Intent j = new Intent();
+                j.putExtra("welcome", "Your profile data has been saved successfully " + name + " !");
+                setResult(profile.RESULT_OK, j);
+                finish();
             }
-
 
         });
 
 
-
-
     }
+
+
 }

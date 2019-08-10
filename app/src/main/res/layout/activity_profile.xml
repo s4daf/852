@@ -29,6 +29,7 @@ android:background="#64b5f6"
 
 
     <EditText
+        android:inputType="phone"
         android:id="@+id/EdtAge"
         android:maxLength="2"
         android:textColor="#000"
@@ -72,13 +73,9 @@ android:background="#64b5f6"
         android:layout_height="wrap_content"
         android:text="review" />
 
-    <TextView
-        android:text="txthello"
-        android:id="@+id/savedata"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_width="100dp"
-        android:layout_height="43dp"
-        android:textColor="#000" />
+<TextView
+    android:id="@+id/txtWelcom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
 
 </LinearLayout>

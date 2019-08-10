@@ -73,7 +73,7 @@ android:background="#64b5f6"
         android:text="review" />
 
     <TextView
-        android:text="succesfulldat"
+        android:text="txthello"
         android:id="@+id/savedata"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"

@@ -2,8 +2,10 @@ package com.chart.informationapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,6 +41,13 @@ public class profile extends AppCompatActivity {
                 intent.putExtra("age",age);
                 intent.putExtra("phone",phone);
                 intent.putExtra("address",address);
+
+
+             // String = PreferenceManager.getDefaultSharedPreferences(Activity.this).getString("name" , "Unknown");
+
+
+               // .setText( " Hello " + name);
+
 
                 startActivityForResult(intent, 150);
 

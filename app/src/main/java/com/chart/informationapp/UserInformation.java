@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.prefs.Preferences;
 
 public class UserInformation extends AppCompatActivity {
 
@@ -17,6 +20,9 @@ public class UserInformation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_information);
+
+
+
 
         TextView Txtname = (TextView) findViewById(R.id.TxtFisrtname);
         TextView Txtfamily = (TextView) findViewById(R.id.TxtSeondName);
@@ -50,12 +56,15 @@ public class UserInformation extends AppCompatActivity {
             }
         });
 
-        Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
+        final Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+
             }
+
+
         });
 
 

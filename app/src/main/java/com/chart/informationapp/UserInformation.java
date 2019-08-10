@@ -23,11 +23,11 @@ public class UserInformation extends AppCompatActivity {
 
 
         TextView Txtname = (TextView) findViewById(R.id.TxtFisrtname);
-        TextView Txtfamily = (TextView) findViewById(R.id.TxtSeondName);
+        TextView Txtfamily = (TextView) findViewById(R.id.TxtSecondName);
         TextView TxtAge = (TextView) findViewById(R.id.TxtTagAge);
         TextView TxtPhone = (TextView) findViewById(R.id.TxtPhoneNumber);
         TextView TxtAddress = (TextView) findViewById(R.id.TxtTagAddress);
-
+0
         Intent intent = getIntent();
         final String name = intent.getStringExtra("name");
         final String family = intent.getStringExtra("family");
@@ -51,6 +51,7 @@ public class UserInformation extends AppCompatActivity {
                 Intent i = new Intent(UserInformation.this, profile.class);
                 startActivity(i);
                 finish();
+
 
                 PreferenceManager
                         .getDefaultSharedPreferences(UserInformation.this)
@@ -83,11 +84,10 @@ public class UserInformation extends AppCompatActivity {
         });
 
 
-        final Button btnConfirm = findViewById(R.id.btnConfirm);
+         Button btnConfirm = findViewById(R.id.btnConfirm);
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
 
                 Intent j = new Intent();
                 j.putExtra("welcome", "Your profile data has been saved successfully " + name + " !");
